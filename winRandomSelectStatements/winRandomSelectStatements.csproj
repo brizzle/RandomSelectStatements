@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D14BAAF5-E1BE-476E-91F5-67D3E266A93F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>winRandomSelectStatements</RootNamespace>
+    <AssemblyName>winRandomSelectStatements</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bogus, Version=20.0.2.0, Culture=neutral, PublicKeyToken=fa1bb3f3f218129a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bogus.20.0.2\lib\net40\Bogus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\baseLocation.cs" />
+    <Compile Include="Entities\basePrisoner.cs" />
+    <Compile Include="Entities\basePrisonerLocation.cs" />
+    <Compile Include="Entities\RPT_0110_PRL_BRD_AGNDA_UNTS.cs" />
+    <Compile Include="Entities\RPT_0120_PRL_BRD_AGENDA.cs" />
+    <Compile Include="Entities\RPT_0130_SMRY_OF_EVNTS.cs" />
+    <Compile Include="Entities\RPT_0140_PRL_BRD_PRCLMTN.cs" />
+    <Compile Include="Entities\RPT_0170_PAROLE_WKST.cs" />
+    <Compile Include="Entities\RPT_1140_WEEK_CAP_SUM.cs" />
+    <Compile Include="Entities\RPT_1190_SEX_OFF_TREAT.cs" />
+    <Compile Include="Entities\RPT_1200_PSYCOED_PROGRAMS.cs" />
+    <Compile Include="Entities\RPT_1210_SUBS_ABUS_TREAT.cs" />
+    <Compile Include="Entities\RPT_1220_ACAD_EDU_PER_SUM.cs" />
+    <Compile Include="Entities\RPT_1220_POST_SEC_ACAD_ED.cs" />
+    <Compile Include="Entities\RPT_1490_CTE_STAT_DETAIL.cs" />
+    <Compile Include="Entities\RPT_1500_CTE_PERF_SUM.cs" />
+    <Compile Include="Entities\RPT_1690_PR_STATS.cs" />
+    <Compile Include="Entities\RPT_1700_WORK_PR_HOURS.cs" />
+    <Compile Include="Entities\RPT_1720_TIME_EXEMPTION.cs" />
+    <Compile Include="Entities\RPT_1740_EDU_TEST_STATUS.cs" />
+    <Compile Include="Entities\RPT_1750_MNTLY_EDU_TEST.cs" />
+    <Compile Include="Entities\RPT_1760_DAILY_EDU_TEST_STAT.cs" />
+    <Compile Include="Entities\RPT_1770_SUBSTANCE_ABUSE_REF.cs" />
+    <Compile Include="Entities\RPT_1800_CORR_PLAN_STAT_SUM.cs" />
+    <Compile Include="Entities\RPT_1920_MIN_QUAL_DISCREP.cs" />
+    <Compile Include="Entities\RPT_1940_INMATES_AGE21_NOGED.cs" />
+    <Compile Include="Entities\RPT_1950_SUMM_NO_GED_21.cs" />
+    <Compile Include="Entities\RPT_1960_GED_STAT_SUM.cs" />
+    <Compile Include="Entities\RPT_2000_FUNC_LIT_STAT_DET.cs" />
+    <Compile Include="Entities\RPT_2030_PR_HOURS_SCH_WEEK.cs" />
+    <Compile Include="Entities\RPT_2470_VSTRS_ANNL_BCKGRD_CHK.cs" />
+    <Compile Include="Entities\RPT_2480_VSTR_PHN_MTCHS.cs" />
+    <Compile Include="Entities\RPT_2500_VSTR_LST_FOR_OFFC.cs" />
+    <Compile Include="Entities\RPT_2510_MLTPL_VSTS_RPT.cs" />
+    <Compile Include="Entities\RPT_2520_MNR_VSTRS_TRNG_18.cs" />
+    <Compile Include="Entities\RPT_2540_INMATE_WO_VSTRS.cs" />
+    <Compile Include="Entities\RPT_2550_DUP_SSN.cs" />
+    <Compile Include="Entities\RPT_2560_INMATE_VISIT_LIST.cs" />
+    <Compile Include="Entities\RPT_2580_VISIT_BY_DATE.cs" />
+    <Compile Include="Entities\RPT_2600_VSTRS_SUSPND_VIOL.cs" />
+    <Compile Include="Entities\RPT_2610_VST_SMRY_INMT.cs" />
+    <Compile Include="Entities\RPT_2620_VST_SMRY_CSA.cs" />
+    <Compile Include="Entities\RPT_780_RECENT_PAY.cs" />
+    <Compile Include="Entities\RTP_1830_OverDue.cs" />
+    <Compile Include="Entities\RTP_1930_INM_PAY_DETAIL.cs" />
+    <Compile Include="FakeData.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
