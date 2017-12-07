@@ -19,7 +19,7 @@ namespace winRandomSelectStatements
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var dataGen = new DataGenerator<Entities.RPT_1810_CORR_PLAN_STAT_SUM>();
+            var dataGen = new DataGenerator<Entities.RPT_2590_SPECIAL_VISIT>();          // CHANGE THE CLASS HERE to RUN NEW ONE
             var sql = new StringBuilder();
 
             sql.Append(dataGen.CreateViewCreation());
