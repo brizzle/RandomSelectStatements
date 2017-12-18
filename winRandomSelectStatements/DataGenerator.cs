@@ -105,7 +105,8 @@ namespace winRandomSelectStatements
 
             // people names
             if (field.ToLower().Contains("inmate_name") ||
-                field.ToLower().Contains("VISITOR_NAME".ToLower()))
+                field.ToLower().Contains("VISITOR_NAME".ToLower()) ||
+                field.ToLower().Contains("STAFF_NAME".ToLower()))
             {
                 return FakeData.RandomName();
             }

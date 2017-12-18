@@ -19,11 +19,12 @@ namespace winRandomSelectStatements
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var dataGen = new DataGenerator<Entities.RPT_2590_SPECIAL_VISIT>();          // CHANGE THE CLASS HERE to RUN NEW ONE
+            var dataGen = new DataGenerator<Entities.RPT_1440_LIFE_PLANNING>();          // CHANGE THE CLASS HERE to RUN NEW ONE
             var sql = new StringBuilder();
 
+            const int numberRows = 50;
             sql.Append(dataGen.CreateViewCreation());
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < numberRows; i++)
             {
                 sql.AppendLine($"{dataGen.CreateSelectLine()} union all ");
             }
