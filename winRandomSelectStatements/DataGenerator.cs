@@ -104,9 +104,15 @@ namespace winRandomSelectStatements
         {
 
             // people names
-            if (field.ToLower().Contains("inmate_name") ||
-                field.ToLower().Contains("VISITOR_NAME".ToLower()) ||
-                field.ToLower().Contains("STAFF_NAME".ToLower()))
+            if (new List<string>
+            {
+                "inmate_name",
+                "VISITOR_NAME".ToLower(),
+                "STAFF_NAME".ToLower(),
+                "REPORTED_BY".ToLower(),
+                "PLAN_MANAGER".ToLower(),
+                "FACILITATOR_NAME".ToLower(),
+            }.Contains(field.ToLower()))
             {
                 return FakeData.RandomName();
             }
@@ -146,7 +152,8 @@ namespace winRandomSelectStatements
             {
                 return FakeData.RandomGender(true);
             }
-            if (field.ToLower().Contains("race"))
+            if (field.ToLower().Contains("race") ||
+                field.ToLower().Contains("ethnic"))
             {
                 return FakeData.RandomRace();
             }

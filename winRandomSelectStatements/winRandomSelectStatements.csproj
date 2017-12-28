@@ -62,6 +62,20 @@
     <Compile Include="Entities\RPT_0190_MODIFICATION_RSLTS.cs" />
     <Compile Include="Entities\RPT_0200_PBS_REVOCATION_AGNDA.cs" />
     <Compile Include="Entities\RPT_0210_PBS_SPCL_HRNG_AGNDA.cs" />
+    <Compile Include="Entities\RPT_0260_UA_VIOL_RESTITUTION.cs" />
+    <Compile Include="Entities\RPT_0270_INMATE_DISCIPLINE.cs" />
+    <Compile Include="Entities\RPT_0290_DISCIP_CASE_SUM.cs" />
+    <Compile Include="Entities\RPT_0300_DISCIPL_SUMMARY.cs" />
+    <Compile Include="Entities\RPT_0320_DISCIPLINE_ACTIONS.cs" />
+    <Compile Include="Entities\RPT_0310_DISCIPLINE_ACTION.cs" />
+    <Compile Include="Entities\RPT_0340_DISCIPLINE_YTD_STAT.cs" />
+    <Compile Include="Entities\RPT_0350_DISCIP_FORT_LOG.cs" />
+    <Compile Include="Entities\RPT_0360_INMATES_PHASE_LEV.cs" />
+    <Compile Include="Entities\RPT_0370_WEEK_INCENT_LOC_NAME.cs" />
+    <Compile Include="Entities\RPT_0380_WEEK_INCENT_LOC_BUILD.cs" />
+    <Compile Include="Entities\RPT_0390_INCENT_LOC_NAME.cs" />
+    <Compile Include="Entities\RPT_0400_INCENT_BUILDING.cs" />
+    <Compile Include="Entities\RPT_0410_INCENT_PHASE.cs" />
     <Compile Include="Entities\RPT_0480_FOREIGN_BORN_INM.cs" />
     <Compile Include="Entities\RPT_0630_FOREIGN_BORN_TOT.cs" />
     <Compile Include="Entities\RPT_0700_DUPLICATE_SSN.cs" />
@@ -69,6 +83,7 @@
     <Compile Include="Entities\RPT_0920_MENTAL_HLTH_DI85.cs" />
     <Compile Include="Entities\RPT_0930_UNDOC_CRIM_ALIENS.cs" />
     <Compile Include="Entities\RPT_0940_NEXT_OF_KIN.cs" />
+    <Compile Include="Entities\RPT_1040_INMATE_LTR_NOTICE.cs" />
     <Compile Include="Entities\RPT_1070_UNDCMNTED_CRIM_ALIENS.cs" />
     <Compile Include="Entities\RPT_1080_PREA_ORIENT_STATUS.cs" />
     <Compile Include="Entities\RPT_1090_MNTH_PREA_PERF.cs" />
@@ -81,6 +96,7 @@
     <Compile Include="Entities\RPT_1210_SUBS_ABUS_TREAT.cs" />
     <Compile Include="Entities\RPT_1220_ACAD_EDU_PER_SUM.cs" />
     <Compile Include="Entities\RPT_1220_POST_SEC_ACAD_ED.cs" />
+    <Compile Include="Entities\RPT_1400_DISCR_OR_DISC_VIOL.cs" />
     <Compile Include="Entities\RPT_1440_LIFE_PLANNING.cs" />
     <Compile Include="Entities\RPT_1470_VIOL_AT_UNIT.cs" />
     <Compile Include="Entities\RPT_1490_CTE_STAT_DETAIL.cs" />
@@ -105,6 +121,14 @@
     <Compile Include="Entities\RPT_2030_PR_HOURS_SCH_WEEK.cs" />
     <Compile Include="Entities\RPT_2040_PR_MISSING_HOURS_RPT.cs" />
     <Compile Include="Entities\RPT_2060_TIMESHEET.cs" />
+    <Compile Include="Entities\RPT_2100_PRINT_TURNOUT_SCH.cs" />
+    <Compile Include="Entities\RPT_2120_TURN_OUT.cs" />
+    <Compile Include="Entities\RPT_2130_WIPP_PAY_DETAIL.cs" />
+    <Compile Include="Entities\RPT_2150_WORK_ASSIGN_ELIG.cs" />
+    <Compile Include="Entities\RPT_2190_JOB_ASSGN_CHNG.cs" />
+    <Compile Include="Entities\RPT_2200_INMATE_WORK_SKILLS.cs" />
+    <Compile Include="Entities\RPT_2210_WORK_PG_ASSIGNMENT.cs" />
+    <Compile Include="Entities\RPT_2220_INMATE_SKILLS_INV.cs" />
     <Compile Include="Entities\RPT_2240_PRL_BRD_ACTION.cs" />
     <Compile Include="Entities\RPT_2250_PRL_ELIG_CERT_RVW.cs" />
     <Compile Include="Entities\RPT_2260_PRL_CERT_LIST.cs" />
@@ -126,6 +150,7 @@
     <Compile Include="Entities\RPT_2620_VST_SMRY_CSA.cs" />
     <Compile Include="Entities\RPT_780_RECENT_PAY.cs" />
     <Compile Include="Entities\RPT_0650_LIFE_PLAN_OVERDUE.cs" />
+    <Compile Include="Entities\RPT_0330_DISCIPLINE_YTD.cs" />
     <Compile Include="Entities\RTP_1830_OverDue.cs" />
     <Compile Include="Entities\RTP_1930_INM_PAY_DETAIL.cs" />
     <Compile Include="FakeData.cs" />
@@ -138,6 +163,7 @@
     <Compile Include="DataGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\RPT_2170_MEDICAL_APPOINTMENTS.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
