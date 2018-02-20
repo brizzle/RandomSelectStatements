@@ -49,7 +49,7 @@ namespace winRandomSelectStatements
                 switch (typeCode)
                 {
                     case TypeCode.DateTime:
-                        var newDate = FakeData.RandomDate().ToString("MM/dd/yyyy");
+                        var newDate = BuildDateTime(propertyInfo.Name);
                         //propertyInfo.SetValue(item, CreateRandomDate());
                         sql.Append($"to_Date('{newDate}', 'mm/dd/yyyy') as {propertyInfo.Name},");
                         break;
@@ -97,11 +97,110 @@ namespace winRandomSelectStatements
             {
                 return FakeData.RandomRandomInt(111223333, 888998899).ToString();
             }
+
+            if (field.ToLower().Contains("rank"))
+            {
+                return "1";
+            }
+
+            if (field.ToLower().Contains("time_slot"))
+            {
+                return FakeData.RandomRandomInt(1, 12).ToString();
+            }
+
+            if (new List<string>
+            {
+                "session_start_time",
+                "session_end_time",
+                "session_time",
+                "time_from",
+                "time_to"
+            }.Contains(field.ToLower()))
+            {
+                return (FakeData.RandomRandomInt(1, 12) * 100).ToString();
+            }
+
+            if (new List<string>
+            {
+                "title_code",
+                "unit_id"
+            }.Contains(field.ToLower()))
+            {
+                return (FakeData.RandomRandomInt(1, 5) * 100).ToString();
+            }
+            if (new List<string>
+            {
+                "session_month"
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomRandomInt(1, 12).ToString();
+            }
+            if (new List<string>
+            {
+                "pay_period_number",
+                "PAY_PERIOD".ToLower()
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomRandomInt(1, 2).ToString();
+            }
+
+
+            if (field.ToLower().Contains("_year"))
+            {
+                return FakeData.RandomRandomInt(2019, 2019).ToString();
+            }
+
             return FakeData.RandomRandomInt(1000, 5999).ToString();
         }
 
+        private string BuildDateTime(string field)
+        {
+            if (field.ToLower().Contains("from_date"))
+            {
+                return DateTime.Now.ToString("MM/dd/yyyy");
+            }
+
+            if (field.ToLower().Contains("to_date"))
+            {
+                return DateTime.Now.AddDays(14).ToString("MM/dd/yyyy");
+            }
+
+            return FakeData.RandomDate().ToString("MM/dd/yyyy");
+        }
         private string BuildString(string field)
         {
+
+            if (new List<string>
+            {
+                "ASSIGNMENT_CODE".ToLower(),
+
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomAssignment_Code();
+            }
+            if (new List<string>
+            {
+                "ASSIGNMENT".ToLower(),
+                "ASSIGNMENT_CODE".ToLower(),
+                "supervisor_code"
+
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomAssignment_Code();
+            }
+
+            if (new List<string>
+            {
+                "CODE".ToLower(),
+                "WIPP".ToLower(),
+                "WIPP_TYPE".ToLower(),
+                "CUSTODY_LEVEL".ToLower(),
+
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomCode();
+            }
+
 
             // people names
             if (new List<string>
@@ -116,7 +215,9 @@ namespace winRandomSelectStatements
             {
                 return FakeData.RandomName();
             }
-            if (field.ToLower().Contains("SUPERVISOR".ToLower()))
+
+            if (field.ToLower().Contains("SUPERVISOR".ToLower()) ||
+                field.ToLower().Contains("shift_commander"))
             {
                 return FakeData.RandomSupervior();
             }
@@ -128,7 +229,8 @@ namespace winRandomSelectStatements
                 return FakeData.RandomPrison();
             }
             if (field.ToLower().Contains("building_name") ||
-                field.ToLower().Contains("HOUSING_UNIT".ToLower()))
+                field.ToLower().Contains("HOUSING_UNIT".ToLower()) ||
+                field.ToLower().Contains("location_desc"))
             {
                 return FakeData.RandomBuilding();
             }
@@ -140,7 +242,10 @@ namespace winRandomSelectStatements
             {
                 return FakeData.RandomBed();
             }
-            if (field.ToLower().Contains("locator_code"))
+            if (field.ToLower().Contains("locator_code") ||
+                field.ToLower().Contains("location_code") ||
+                field.ToLower().Contains("shift_area") ||
+                field.ToLower().Contains("shield_position"))
             {
                 return FakeData.RandomBed();
             }
@@ -182,6 +287,61 @@ namespace winRandomSelectStatements
                 }.Contains(field.ToLower()))
             {
                 return FakeData.RandomStatus();
+            }
+
+
+            if (new List<string>
+            {
+                "visitor_type",
+                "program_type",
+                "PROGRAM_CATEGORY".ToLower(),
+                "PROGRAM_ASSIGNMENT".ToLower(),
+                "DI83_PGM".ToLower(),
+                "CAPACITY_GROUP".ToLower(),
+                "IPP_TYPE".ToLower()
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomType();
+            }
+
+            if (new List<string>
+            {
+                "category",
+                "category_code",
+                "title_code",
+                "title_description"
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomCategory();
+            }
+
+
+            if (new List<string>
+            {
+                "work_assignment"
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomWorkAssignment();
+            }
+
+
+            if (new List<string>
+            {
+                "PROGRAM_STATUS".ToLower(),
+                "TYP".ToLower(),
+
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomProgram_status();
+            }
+
+            if (new List<string>
+            {
+                "group_no",
+                "group_id"
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomGroup_Id();
             }
 
 

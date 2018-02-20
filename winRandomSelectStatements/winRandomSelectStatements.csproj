@@ -79,6 +79,9 @@
     <Compile Include="Entities\RPT_0480_FOREIGN_BORN_INM.cs" />
     <Compile Include="Entities\RPT_0630_FOREIGN_BORN_TOT.cs" />
     <Compile Include="Entities\RPT_0700_DUPLICATE_SSN.cs" />
+    <Compile Include="Entities\RPT_0720_PRINT_DI70_REPORTS.cs" />
+    <Compile Include="Entities\RPT_0750_MEDICAL_RELEASE_CODES.cs" />
+    <Compile Include="Entities\RPT_0760_MENTAL_HEALTH.cs" />
     <Compile Include="Entities\RPT_0890_PREA_NOT_COMPLETED.cs" />
     <Compile Include="Entities\RPT_0920_MENTAL_HLTH_DI85.cs" />
     <Compile Include="Entities\RPT_0930_UNDOC_CRIM_ALIENS.cs" />
@@ -113,6 +116,7 @@
     <Compile Include="Entities\RPT_1790_MNTHLY_PR_RECAP.cs" />
     <Compile Include="Entities\RPT_1800_CORR_PLAN_STAT_SUM.cs" />
     <Compile Include="Entities\RPT_1810_CORR_PLAN_STAT_SUM.cs" />
+    <Compile Include="Entities\RPT_1830_PR_OVERDUE_ACI.cs" />
     <Compile Include="Entities\RPT_1920_MIN_QUAL_DISCREP.cs" />
     <Compile Include="Entities\RPT_1940_INMATES_AGE21_NOGED.cs" />
     <Compile Include="Entities\RPT_1950_SUMM_NO_GED_21.cs" />
@@ -122,8 +126,10 @@
     <Compile Include="Entities\RPT_2040_PR_MISSING_HOURS_RPT.cs" />
     <Compile Include="Entities\RPT_2060_TIMESHEET.cs" />
     <Compile Include="Entities\RPT_2100_PRINT_TURNOUT_SCH.cs" />
+    <Compile Include="Entities\RPT_2110_WORK_CAPACITY_DTL.cs" />
     <Compile Include="Entities\RPT_2120_TURN_OUT.cs" />
     <Compile Include="Entities\RPT_2130_WIPP_PAY_DETAIL.cs" />
+    <Compile Include="Entities\RPT_2140_REVISED_WIPP_TIME_SHT.cs" />
     <Compile Include="Entities\RPT_2150_WORK_ASSIGN_ELIG.cs" />
     <Compile Include="Entities\RPT_2190_JOB_ASSGN_CHNG.cs" />
     <Compile Include="Entities\RPT_2200_INMATE_WORK_SKILLS.cs" />

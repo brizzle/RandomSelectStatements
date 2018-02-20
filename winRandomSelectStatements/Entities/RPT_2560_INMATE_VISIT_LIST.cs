@@ -4,8 +4,10 @@ namespace winRandomSelectStatements.Entities
 {
     public class RPT_2560_INMATE_VISIT_LIST
     {
+        public string PRISON_NAME { get; set; }
         public string VISIT_LOCATION_CODE { get; set; }
         public string VISIT_LOCATION_DESC { get; set; }
+        public string BED_NUMBER_DESIGNATION { get; set; }
         public int ADC_NUMBER { get; set; }
         public string INMATE_NAME { get; set; }
         public string INMATE_STATUS { get; set; }

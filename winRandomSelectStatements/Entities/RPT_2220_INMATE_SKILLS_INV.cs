@@ -18,11 +18,11 @@ namespace winRandomSelectStatements.Entities
 
         public string ASSIGNMENT_ID { get; set; }
         public string ASSIGNMENT { get; set; }
-        public int CU_LEVEL { get; set; }
+        public string CU_LEVEL { get; set; }
         public int IR_LEVEL { get; set; }
 
         public int AGE { get; set; }
-        public int CUSTODY_LEVEL { get; set; }
+        public string CUSTODY_LEVEL { get; set; }
         public string SEX_STATUS { get; set; }
         public int SKILL_LEVEL { get; set; }
 

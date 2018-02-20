@@ -29,6 +29,9 @@ namespace winRandomSelectStatements.Entities
         public string MINOR_FLAG { get; set; }
         public string VISITOR_STATUS { get; set; }
         public string VISITOR_ID { get; set; }
+        public string PRISON_NAME { get; set; }
+
+        public int RANK { get; set; }
 
     }
 }

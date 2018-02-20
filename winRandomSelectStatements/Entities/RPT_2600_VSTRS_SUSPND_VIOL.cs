@@ -33,6 +33,7 @@ namespace winRandomSelectStatements.Entities
         public string SUSPENSION_COMMENT_TYPE { get; set; }
         public DateTime SUSPENSION_COMMENT_DATE { get; set; }
         public string SUSPENSION_COMMENT { get; set; }
+        public string PRISON_NAME { get; set; }
 
     }
 }

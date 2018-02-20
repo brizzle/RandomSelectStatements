@@ -12,6 +12,7 @@
 
         public string LOCATION_CODE { get; set; }
         public string LOCATION_DESC { get; set; }
+        public string PRISON_NAME { get; set; }
 
     }
 }

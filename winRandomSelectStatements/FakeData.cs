@@ -19,8 +19,33 @@ namespace winRandomSelectStatements
 
         public static DateTime RandomDate()
         {
+            
+
             return new Faker().Date.Between(DateTime.Now.AddMonths(-5), DateTime.Now.AddMonths(5));
 
+        }
+
+        public static string RandomAssignment_Code()
+        {
+            var names = new List<string>
+            {
+                "AC1",
+                "AC2",
+                "AC3",
+                "AC4",
+            };
+            return new Faker().PickRandom(names);
+        }
+        public static string RandomAssignment()
+        {
+            var names = new List<string>
+            {
+                "Assign1",
+                "Assign2",
+                "Assign3",
+                "Assign4",
+            };
+            return new Faker().PickRandom(names);
         }
 
         public static string RandomAlphaNumeric(int length)
@@ -40,15 +65,15 @@ namespace winRandomSelectStatements
             {
                 "Natasha Dibbert",
                 "Renee Volkman",
-                "Lawrence Schaden",
-                "Jordan Lebsack",
-                "Janiya Herzog",
-                "Augustine Parker",
-                "Cleta Jacobs",
-                "Camron Walsh",
-                "Makenna Parisian",
-                "Scotty Hoeger",
-                "Mariane Toy",
+                //"Lawrence Schaden",
+                //"Jordan Lebsack",
+                //"Janiya Herzog",
+                //"Augustine Parker",
+                //"Cleta Jacobs",
+                //"Camron Walsh",
+                //"Makenna Parisian",
+                //"Scotty Hoeger",
+                //"Mariane Toy",
             };
             return new Faker().PickRandom(names);
         }
@@ -161,6 +186,17 @@ namespace winRandomSelectStatements
             });
         }
 
+        public static string RandomGroup_Id()
+        {
+            return new Faker().PickRandom(
+                new List<string>
+                {
+                    "GRP1",
+                    "GRP2",
+                    "GRP3"
+                });
+        }
+
         public static string RandomCustodyLevel()
         {
             return new Faker().PickRandom(new List<string>
@@ -170,6 +206,61 @@ namespace winRandomSelectStatements
                 "Close",
                 "Maximun"
             });
+        }
+
+        public static string RandomType()
+        {
+            return new Faker().PickRandom(new List<string>
+            {
+                "Type1",
+                "Type2",
+            });
+        }
+
+        public static string RandomCategory()
+        {
+            var units = new List<string>
+            {
+                "Cat1",
+                "Cat2",
+                "Cat3",
+            };
+            return new Faker().PickRandom(units);
+        }
+
+        public static string RandomCode()
+        {
+            var units = new List<string>
+            {
+                "Code1",
+                "Code2",
+            };
+            return new Faker().PickRandom(units);
+        }
+
+        public static string RandomWorkAssignment()
+        {
+            var units = new List<string>
+            {
+                "Assignment1",
+                "Assignment2",
+                "Assignment3",
+            };
+            return new Faker().PickRandom(units);
+        }
+
+        public static string RandomProgram_status()
+        {
+            var items = new List<string>
+            {
+                "EN",
+                "AF",
+                "RF",
+                "AD",
+                "CM",
+                "RL",
+            };
+            return new Faker().PickRandom(items);
         }
     }
 }

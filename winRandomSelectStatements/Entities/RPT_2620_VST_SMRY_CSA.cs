@@ -24,6 +24,7 @@ namespace winRandomSelectStatements.Entities
         public string VISITOR_STATUS { get; set; }
         public string VISIT_ACTION_TAKEN { get; set; }
         public string VISITOR_ID { get; set; }
+        public string PRISON_NAME { get; set; }
 
     }
 }

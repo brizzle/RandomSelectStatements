@@ -110,5 +110,7 @@
         public decimal COMPLETED45_RE_PERC { get; set; }
         public decimal COMPLETED45_DV_PERC { get; set; }
 
+        public bool ISPRIVATE { get; set; }
+
     }
 }

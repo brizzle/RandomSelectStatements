@@ -25,6 +25,7 @@ namespace winRandomSelectStatements.Entities
         public int COUNTRY_CODE { get; set; }
         public int AREA_CODE { get; set; }
         public int PHONE_NUMBER { get; set; }
+        public string PRISON_NAME { get; set; }
 
     }
 }

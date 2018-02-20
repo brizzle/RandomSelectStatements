@@ -21,6 +21,6 @@ namespace winRandomSelectStatements.Entities
         public DateTime VISIT_DATE { get; set; }
         public string VISITOR_ID { get; set; }
         public string VISIT_TERMINATION_STATUS { get; set; }
-
+        public string PRISON_NAME { get; set; }
     }
 }

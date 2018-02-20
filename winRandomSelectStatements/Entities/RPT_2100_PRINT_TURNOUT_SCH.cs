@@ -14,13 +14,15 @@ namespace winRandomSelectStatements.Entities
 
         public int PROGRAM_ID { get; set; }
         public DateTime SESSION_DATE { get; set; }
-        public string TIME_SLOT { get; set; }
+        public int TIME_SLOT { get; set; }
 
         public int SESSION_START_TIME { get; set; }
         public int SESSION_END_TIME { get; set; }
 
         public string SHIFT_AREA { get; set; }
         public string SHIFT_POSITTION { get; set; }
+
+        public string SHIFT_COMMANDER { get; set; }
 
     }
 }

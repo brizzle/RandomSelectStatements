@@ -13,6 +13,7 @@ namespace winRandomSelectStatements.Entities
         public string HOUSING_UNIT { get; set; }
         public string NO_VISITS_INDICATOR { get; set; }
         public DateTime VISITATION_REVIEW_DATE { get; set; }
+        public string PRISON_NAME { get; set; }
 
     }
 }
