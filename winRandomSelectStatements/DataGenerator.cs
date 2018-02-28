@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -230,7 +231,8 @@ namespace winRandomSelectStatements
             }
             if (field.ToLower().Contains("building_name") ||
                 field.ToLower().Contains("HOUSING_UNIT".ToLower()) ||
-                field.ToLower().Contains("location_desc"))
+                field.ToLower().Contains("location_desc") ||
+                field.ToLower().Contains("LOCATION_CODE_DESC".ToLower()))
             {
                 return FakeData.RandomBuilding();
             }

@@ -62,6 +62,7 @@
     <Compile Include="Entities\RPT_0190_MODIFICATION_RSLTS.cs" />
     <Compile Include="Entities\RPT_0200_PBS_REVOCATION_AGNDA.cs" />
     <Compile Include="Entities\RPT_0210_PBS_SPCL_HRNG_AGNDA.cs" />
+    <Compile Include="Entities\RPT_0240_ADLT_OFFNDRS_BY_GNDR.cs" />
     <Compile Include="Entities\RPT_0260_UA_VIOL_RESTITUTION.cs" />
     <Compile Include="Entities\RPT_0270_INMATE_DISCIPLINE.cs" />
     <Compile Include="Entities\RPT_0290_DISCIP_CASE_SUM.cs" />
@@ -82,10 +83,13 @@
     <Compile Include="Entities\RPT_0720_PRINT_DI70_REPORTS.cs" />
     <Compile Include="Entities\RPT_0750_MEDICAL_RELEASE_CODES.cs" />
     <Compile Include="Entities\RPT_0760_MENTAL_HEALTH.cs" />
+    <Compile Include="Entities\RPT_0770_TRIGGER_REASON_REPORT.cs" />
+    <Compile Include="Entities\RPT_0810_DWI_COMMITMENTS.cs" />
     <Compile Include="Entities\RPT_0890_PREA_NOT_COMPLETED.cs" />
     <Compile Include="Entities\RPT_0920_MENTAL_HLTH_DI85.cs" />
     <Compile Include="Entities\RPT_0930_UNDOC_CRIM_ALIENS.cs" />
     <Compile Include="Entities\RPT_0940_NEXT_OF_KIN.cs" />
+    <Compile Include="Entities\RPT_0980_COS_BILLING_SUMMARY.cs" />
     <Compile Include="Entities\RPT_1040_INMATE_LTR_NOTICE.cs" />
     <Compile Include="Entities\RPT_1070_UNDCMNTED_CRIM_ALIENS.cs" />
     <Compile Include="Entities\RPT_1080_PREA_ORIENT_STATUS.cs" />
@@ -139,6 +143,7 @@
     <Compile Include="Entities\RPT_2250_PRL_ELIG_CERT_RVW.cs" />
     <Compile Include="Entities\RPT_2260_PRL_CERT_LIST.cs" />
     <Compile Include="Entities\RPT_2310_PRL_HRNG_DENIALS.cs" />
+    <Compile Include="Entities\RPT_2320_CASE_NUMBER_SEARCH.cs" />
     <Compile Include="Entities\RPT_2470_VSTRS_ANNL_BCKGRD_CHK.cs" />
     <Compile Include="Entities\RPT_2480_VSTR_PHN_MTCHS.cs" />
     <Compile Include="Entities\RPT_2490_VSTR_LST_FOR_INMT.cs" />
