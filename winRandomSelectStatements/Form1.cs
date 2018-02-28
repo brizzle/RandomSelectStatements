@@ -26,7 +26,7 @@ namespace winRandomSelectStatements
 
         private async Task MakeSql()
         {
-            var dataGen = new DataGenerator<Entities.RPT_0810_DWI_COMMITMENTS>();          // CHANGE THE CLASS HERE to RUN NEW ONE
+            var dataGen = new DataGenerator<Entities.RPT_0770_TRIGGER_REASON_REPORT>();          // CHANGE THE CLASS HERE to RUN NEW ONE
             var sql = new StringBuilder();
 
             const int numberRows = 50;

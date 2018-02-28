@@ -9,6 +9,7 @@ namespace winRandomSelectStatements.Entities
         public string CDE { get; set; }
         public DateTime RELEASE_DATE { get; set; }
         public int RELEASE_CODE { get; set; }
+        public string ADMIN_REGION { get; set; }
 
     }
 }

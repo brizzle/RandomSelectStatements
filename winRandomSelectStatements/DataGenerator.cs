@@ -145,6 +145,19 @@ namespace winRandomSelectStatements
                 return FakeData.RandomRandomInt(1, 2).ToString();
             }
 
+            if (new List<string>
+            {
+                "release_code",
+                "md",
+                "mh",
+                "cde",
+                "m_code"
+
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomAssignment_CodeInt().ToString();
+            }
+
 
             if (field.ToLower().Contains("_year"))
             {
@@ -173,17 +186,10 @@ namespace winRandomSelectStatements
 
             if (new List<string>
             {
-                "ASSIGNMENT_CODE".ToLower(),
-
-            }.Contains(field.ToLower()))
-            {
-                return FakeData.RandomAssignment_Code();
-            }
-            if (new List<string>
-            {
                 "ASSIGNMENT".ToLower(),
                 "ASSIGNMENT_CODE".ToLower(),
-                "supervisor_code"
+                "supervisor_code",
+                "release_code"
 
             }.Contains(field.ToLower()))
             {
@@ -252,7 +258,13 @@ namespace winRandomSelectStatements
                 return FakeData.RandomBed();
             }
 
-
+            if(new List<string>
+                {
+                    "admin_region"
+                }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomRegion();
+            }
 
             // other items
             if (field.ToLower().Contains("gender"))
@@ -275,10 +287,22 @@ namespace winRandomSelectStatements
                 "WARDEN_APPROVAL".ToLower(),
                 "WARDEN_DENIAL".ToLower(),
                 "NO_VISITS_INDICATOR".ToLower(),
+
             }.Contains(field.ToLower()))
             {
                 return FakeData.RandomYesNO(true);
             }
+            if (new List<string>
+            {
+                "sa",
+                "smi",
+                "smic",
+                "meds"
+            }.Contains(field.ToLower()))
+            {
+                return FakeData.RandomYesNO(false);
+            }
+
 
 
             if (new List<string>
@@ -300,7 +324,8 @@ namespace winRandomSelectStatements
                 "PROGRAM_ASSIGNMENT".ToLower(),
                 "DI83_PGM".ToLower(),
                 "CAPACITY_GROUP".ToLower(),
-                "IPP_TYPE".ToLower()
+                "IPP_TYPE".ToLower(),
+                "trigger_type",
             }.Contains(field.ToLower()))
             {
                 return FakeData.RandomType();
@@ -347,7 +372,7 @@ namespace winRandomSelectStatements
             }
 
 
-            return FakeData.RandomAlphaNumeric(5);
+            return FakeData.RandomAlphaNumeric(3);
 
         }
 

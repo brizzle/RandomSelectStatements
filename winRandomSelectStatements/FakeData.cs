@@ -36,6 +36,17 @@ namespace winRandomSelectStatements
             };
             return new Faker().PickRandom(names);
         }
+        public static int RandomAssignment_CodeInt()
+        {
+            var names = new List<int>
+            {
+                11,
+                22,
+                33,
+            };
+            return new Faker().PickRandom(names);
+        }
+
         public static string RandomAssignment()
         {
             var names = new List<string>
@@ -261,6 +272,17 @@ namespace winRandomSelectStatements
                 "RL",
             };
             return new Faker().PickRandom(items);
+        }
+
+        public static string RandomRegion()
+        {
+            var regs = new List<string>
+            {
+                "Reg1",
+                "Reg2",
+                "Reg3"
+            };
+            return new Faker().PickRandom(regs);
         }
     }
 }
